@@ -57,6 +57,7 @@ public class SelectDelayHoursPopup {
                 if(mListener != null) {
                     mListener.onSelect(adapter.getItem(position));
                 }
+                dismiss();
             }
         });
 
@@ -78,7 +79,6 @@ public class SelectDelayHoursPopup {
 
     public void showPopup(View rootView) {
         // 第一个参数是要将PopupWindow放到的View，第二个参数是位置，第三第四是偏移值
-//        mPopupWindow.showAtLocation(rootView, Gravity.BOTTOM, 0, 0);
         mPopupWindow.setAnchorView(rootView);
         mPopupWindow.show();
     }
