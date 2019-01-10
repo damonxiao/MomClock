@@ -1,0 +1,2 @@
+include ':app', ':alarmmanagerclocknew'
+project(':alarmmanagerclocknew').projectDir = new File('alarmmanagerclock')
